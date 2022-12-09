@@ -1,0 +1,528 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text_color);
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(250, 250, 250);
+}
+
+:root {
+    font-size: 10px;
+    --text_color: rgb(38, 38, 38);
+    --second-text-color: rgb(142, 142, 142);
+    --blue: rgb(0, 149, 246);
+    --pink: #ff0169;
+    --background: rgb(250, 250, 250);
+    --border_bottom: rgb(219, 219, 219);
+}
+
+/* Start The Header Section */
+.home-page-header {
+    width: 100vw;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+    border-bottom: 1px solid var(--border_bottom);
+    z-index: 100;
+}
+
+
+.instagram-icon {
+    display: none;
+    box-sizing: content-box;
+    padding: 1.2rem;
+    margin-block: 2rem;
+}
+
+.instagram-logo {
+    box-sizing: content-box;
+    padding: 1.2rem 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.actions {
+    display: flex;
+}
+
+.menu-button {
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 1.6rem;
+}
+
+.menu-text {
+    font-size: 1.5rem;
+    display: none;
+}
+
+.home-button .home-text {
+    font-weight: 600;
+}
+
+.home-page-header .profile-in-header {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+/* End The Header Section */
+
+/* Start Bottom Menu */
+.bottom-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.profile-button .profile-picture {
+    width: 24px;
+    height: 24px;
+    margin: 1.2rem;
+}
+
+/* End Bottom Menu */
+
+.post-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 468px;
+}
+
+/* Start The Main Section */
+
+.main-content {
+    width: 100vw;
+    margin-top: 5.3rem;
+    margin-bottom: 4.8rem;
+}
+
+.main-section {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+/* Start The Stories Section */
+.stories {
+    background-color: #FFF;
+    width: 100vw;
+    max-width: 468px;
+    padding: 1.6rem 0 1.6rem 1.6rem;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    /* margin-top: 2.5rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    /*forInternetExplorer,Edge*/
+    scrollbar-width: none;
+    /*forFirefox*/
+    overflow-y: scroll;
+}
+
+.stories::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.story-bullet {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.profile-picture {
+    background: url(../assets/images/story.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.profile-frame {
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    border: 2px solid var(--pink);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.story-bullet .profile-name {
+    font-size: 1.1rem;
+}
+
+.story-bullet .profile-picture .story-small-plus {
+    position: absolute;
+    bottom: -.4rem;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #FFF;
+    background-color: #FFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* End The Stories Section */
+
+/* Start The Posts Section */
+.post-card {
+    width: 100vw;
+    max-width: 468px;
+    background-color: #FFF;
+    border: 1px solid rgb(219, 219, 219);
+    margin-top: 1.6rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.post-card .top-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.2rem;
+    padding: 1rem 1.6rem;
+}
+
+.post-card .top-card .left {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+.user-name {
+    font-weight: 600;
+}
+
+.post-card .top-card .profile-picture {
+    width: 3rem;
+    height: 3rem;
+}
+
+.image-post {
+    width: 100%;
+}
+
+.bottom-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.6rem;
+}
+
+.bottom-card .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.6rem;
+}
+
+.likes-counter {
+    margin-left: 1.6rem;
+}
+
+.likes-counter * {
+    font-weight: 600;
+}
+
+.description-section {
+    margin-left: 1.6rem;
+    margin-top: .8rem;
+}
+
+.all-comments {
+    color: var(--second-text-color);
+    margin-left: 1.6rem;
+}
+
+.all-comments * {
+    color: var(--second-text-color);
+}
+
+.publish-time {
+    color: var(--second-text-color);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.6rem;
+}
+
+.publish-time,
+.publish-time span {
+    font-size: 1rem;
+    color: var(--second-text-color);
+}
+
+/* Start The Suggestion Section */
+.suggestions-section {
+    display: none;
+    width: 350px;
+    height: 342px;
+    margin: 3rem 0 0 1.6rem;
+    padding: 1.6rem;
+}
+
+.suggestions-section .profile-switch .left {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+.suggestions-section .profile-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.suggestions-section .profile-info {
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+}
+
+.suggestions-section .profile-info .user-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.suggestions-section .profile-info .bio {
+    font-size: 1.4rem;
+    color: var(--second-text-color);
+}
+
+.suggestions-section .Switch-account-btn {
+    color: var(--blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.suggestions-for-you {
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suggestions-for-you .suggestions-label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--second-text-color);
+}
+
+.suggestions-for-you .see-all {
+    font-size: 1.2rem;
+}
+
+.seggestion .profile-image {
+    background-image: url(../assets/images/post_2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.seggestion {
+    justify-content: space-between;
+    padding: .8rem 0 .8rem .8rem;
+}
+
+.seggestion .user,
+.seggestion {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+.seggestion .user .followed-by {
+    font-size: 1.1rem;
+    color: var(--second-text-color);
+}
+
+.seggestion .follow-btn {
+    color: var(--blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* End The Suggestion Section */
+
+/* End The Main Section */
+@media only screen and (min-width: 1000px) {
+    .home-page-header {
+        border: none;
+        border-right: 1px solid rgb(219, 219, 219);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 7.2rem;
+        height: 100vh;
+        padding: .8rem 1.2rem 2rem 1.2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .bottom-menu {
+        display: none;
+    }
+
+    .instagram-logo {
+        display: none !important;
+        padding: 2.5rem 1.2rem 1.6rem 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .instagram-icon {
+        display: block;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .menu-button {
+        margin-block: .8rem;
+    }
+
+    .hidden {
+        display: flex !important;
+    }
+
+    .main-content {
+        width: calc(100vw - 4.7rem);
+        margin-left: 4.7rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .home-page-header {
+        width: 22rem;
+    }
+
+    .instagram-logo {
+        display: block !important;
+    }
+
+    .instagram-icon {
+        display: none !important;
+    }
+
+    .menu-text {
+        display: block !important;
+    }
+
+    .suggestions-section {
+        display: block !important;
+    }
+
+    .main-content {
+        width: calc(100vw - 19.5rem);
+        margin-left: 19.5rem;
+    }
+}
+
+/* @media only screen and (min-width: 1000px) {
+    .home-page-header {
+        border: none;
+        border-right: 1px solid rgb(219, 219, 219);
+        flex-direction: column;
+        width: 7.2rem;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .instagram-logo {
+        display: none;
+    }
+
+    .main-section {
+        margin-left: 7.2rem;
+    }
+
+    .main-content {
+        margin-left: 24.5rem;
+    }
+}
+
+ @media only screen and (min-width: 1300px) {
+    .home-page-header {
+        width: 22rem;
+        align-items: flex-start;
+    }
+
+    .main-section {
+        margin-left: 22rem;
+    }
+
+    .home-page-header .menu-text {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .suggestions-section {
+        display: none;
+    }
+} */
+
+/* End The Posts Section */
