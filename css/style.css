@@ -181,8 +181,8 @@ body {
 
 .profile-frame {
     position: absolute;
-    top: -0.5rem;
-    left: -0.5rem;
+    top: -.5rem;
+    left: -.5rem;
     width: 6.6rem;
     height: 6.6rem;
     border: 2px solid var(--pink);
@@ -309,7 +309,7 @@ body {
     display: none;
     width: 350px;
     height: 342px;
-    margin: 3rem 0 0 1.6rem;
+    margin: .6rem 0 0 1.6rem;
     padding: 1.6rem;
 }
 
@@ -405,7 +405,7 @@ body {
 /* End The Suggestion Section */
 
 /* End The Main Section */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 700px) {
     .home-page-header {
         border: none;
         border-right: 1px solid rgb(219, 219, 219);
@@ -452,7 +452,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
     .home-page-header {
         width: 22rem;
     }
@@ -478,51 +478,5 @@ body {
         margin-left: 19.5rem;
     }
 }
-
-/* @media only screen and (min-width: 1000px) {
-    .home-page-header {
-        border: none;
-        border-right: 1px solid rgb(219, 219, 219);
-        flex-direction: column;
-        width: 7.2rem;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-    .instagram-logo {
-        display: none;
-    }
-
-    .main-section {
-        margin-left: 7.2rem;
-    }
-
-    .main-content {
-        margin-left: 24.5rem;
-    }
-}
-
- @media only screen and (min-width: 1300px) {
-    .home-page-header {
-        width: 22rem;
-        align-items: flex-start;
-    }
-
-    .main-section {
-        margin-left: 22rem;
-    }
-
-    .home-page-header .menu-text {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 870px) {
-    .suggestions-section {
-        display: none;
-    }
-} */
 
 /* End The Posts Section */
